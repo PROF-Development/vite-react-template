@@ -1,0 +1,5 @@
+body, div#root {
+    margin: 0 auto;
+    min-width: 100vw;
+    min-height: 100vh;
+}
