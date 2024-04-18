@@ -5,6 +5,9 @@ export default function HomePage() {
   return (
     <StaticPage>
       <p>HomePage</p>
+      <div>
+        dsadas
+      </div>
     </StaticPage>
   );
 }
