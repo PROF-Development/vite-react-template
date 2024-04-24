@@ -1,4 +1,3 @@
-/*import React, { Component } from 'react';*/
 import { Layout } from 'antd';
 import Header from './Header';
 import Footer from './Footer';
@@ -8,13 +7,9 @@ const wrapperStyle = {
 };
 
 export default function StaticPage({
-                                     // eslint-disable-next-line react/prop-types
   children,
-                                     // eslint-disable-next-line react/prop-types
   style,
-                                     // eslint-disable-next-line react/prop-types
   noFooter = false,
-                                     // eslint-disable-next-line react/prop-types
   noHeader = false,
 }) {
   return (

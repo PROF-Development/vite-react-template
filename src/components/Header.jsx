@@ -1,4 +1,3 @@
-/*import React from 'react';*/
 import { Link } from 'react-router-dom';
 import { Avatar, Typography } from 'antd';
 import logo from '../assets/react.svg';
