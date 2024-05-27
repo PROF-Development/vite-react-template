@@ -1,10 +1,9 @@
-import React from 'react'
-import StaticPage from '../components/StaticPage'
+import StaticPage from '../components/StaticPage';
 
 export default function HomePage() {
     return (
         <StaticPage>
-            <p>HomePage</p>
+            <p data-testid='block'>HomePage</p>
         </StaticPage>
-    )
+    );
 }

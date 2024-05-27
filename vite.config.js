@@ -14,9 +14,14 @@ export default defineConfig({
       '/api/': {
         target: 'http://localhost:3000',
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, '')
-      }
-      
-    }
+        rewrite: (path) => path.replace(/^\/api/, ''),
+      },
+    },
+  },
+  test: {
+    globals: true,
+    environment: "jsdom",
+    setupFiles: "./src/setupTests.js",
+    css: true,
   }
-});
+})
