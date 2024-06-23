@@ -1,11 +1,20 @@
+import React from "react";
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import './index.css';
 import { ConfigProvider } from 'antd';
-import { antdTheme } from './config';
+import config, { antdTheme } from './config';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <ConfigProvider theme={antdTheme}>
-    <App />
-  </ConfigProvider>
+    config.DEBUG ? (
+        <React.StrictMode>
+            <ConfigProvider theme={antdTheme}>
+                <App />
+            </ConfigProvider>
+        </React.StrictMode>
+    ) : (
+        <ConfigProvider theme={antdTheme}>
+            <App />
+        </ConfigProvider>
+    )
 );
