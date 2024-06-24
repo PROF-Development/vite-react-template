@@ -1,6 +1,5 @@
 export * from './ui.js';
-export * from './base.js';
-import {config as defaultConfig} from './defaults';
+import {config as defaultConfig} from './default.js';
 import { loadConfig} from './loaders.js';
 
 const loadedConfig = loadConfig();
