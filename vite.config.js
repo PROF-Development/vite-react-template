@@ -15,7 +15,7 @@ export default defineConfig({
     proxy: {
       '/api/': {
         // eslint-disable-next-line no-undef
-        target: process.env.REACT_APP_API_URL,
+        target: process.env.VITE_PROXY_TARGET,
         changeOrigin: true,
       },
     },
