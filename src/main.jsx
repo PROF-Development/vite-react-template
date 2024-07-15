@@ -5,6 +5,7 @@ import './index.css';
 import { ConfigProvider } from 'antd';
 import config, { antdTheme } from './config';
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
     config.DEBUG ? (
         <React.StrictMode>
